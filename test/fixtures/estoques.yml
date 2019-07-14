@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cliente: one
+  veiculo: one
+  chave: false
+  funciona: false
+  data_entrada: 2019-07-14
+  banco: one
+  responsavel_entrada: 1
+  reboque: false
+  cidade: one
+  tipo_entrada: one
+  data_saida: 2019-07-14
+  responsavel_saida: 1
+
+two:
+  cliente: two
+  veiculo: two
+  chave: false
+  funciona: false
+  data_entrada: 2019-07-14
+  banco: two
+  responsavel_entrada: 1
+  reboque: false
+  cidade: two
+  tipo_entrada: two
+  data_saida: 2019-07-14
+  responsavel_saida: 1

@@ -1,0 +1,77 @@
+<%= form_with(model: estoque, local: true) do |form| %>
+  <% if estoque.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(estoque.errors.count, "error") %> prohibited this estoque from being saved:</h2>
+
+      <ul>
+      <% estoque.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :cliente_id %>
+    <%= form.text_field :cliente_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :veiculo_id %>
+    <%= form.text_field :veiculo_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :chave %>
+    <%= form.check_box :chave %>
+  </div>
+
+  <div class="field">
+    <%= form.label :funciona %>
+    <%= form.check_box :funciona %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_entrada %>
+    <%= form.date_select :data_entrada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :banco_id %>
+    <%= form.text_field :banco_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :responsavel_entrada %>
+    <%= form.number_field :responsavel_entrada %>
+  </div>
+
+  <div class="field">
+    <%= form.label :reboque %>
+    <%= form.check_box :reboque %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cidade_id %>
+    <%= form.text_field :cidade_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo_entrada_id %>
+    <%= form.text_field :tipo_entrada_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_saida %>
+    <%= form.date_select :data_saida %>
+  </div>
+
+  <div class="field">
+    <%= form.label :responsavel_saida %>
+    <%= form.number_field :responsavel_saida %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

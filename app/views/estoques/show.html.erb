@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @estoque.cliente %>
+</p>
+
+<p>
+  <strong>Veiculo:</strong>
+  <%= @estoque.veiculo %>
+</p>
+
+<p>
+  <strong>Chave:</strong>
+  <%= @estoque.chave %>
+</p>
+
+<p>
+  <strong>Funciona:</strong>
+  <%= @estoque.funciona %>
+</p>
+
+<p>
+  <strong>Data entrada:</strong>
+  <%= @estoque.data_entrada %>
+</p>
+
+<p>
+  <strong>Banco:</strong>
+  <%= @estoque.banco %>
+</p>
+
+<p>
+  <strong>Responsavel entrada:</strong>
+  <%= @estoque.responsavel_entrada %>
+</p>
+
+<p>
+  <strong>Reboque:</strong>
+  <%= @estoque.reboque %>
+</p>
+
+<p>
+  <strong>Cidade:</strong>
+  <%= @estoque.cidade %>
+</p>
+
+<p>
+  <strong>Tipo entrada:</strong>
+  <%= @estoque.tipo_entrada %>
+</p>
+
+<p>
+  <strong>Data saida:</strong>
+  <%= @estoque.data_saida %>
+</p>
+
+<p>
+  <strong>Responsavel saida:</strong>
+  <%= @estoque.responsavel_saida %>
+</p>
+
+<%= link_to 'Edit', edit_estoque_path(@estoque) %> |
+<%= link_to 'Back', estoques_path %>
