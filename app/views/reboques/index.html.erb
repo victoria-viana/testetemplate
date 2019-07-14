@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Reboques</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veiculo</th>
+      <th>Devolucao</th>
+      <th>Data reboque</th>
+      <th>Endereco origem</th>
+      <th>Cidade origem</th>
+      <th>Endereco destino</th>
+      <th>Cidade entrega</th>
+      <th>Cliente</th>
+      <th>Valor</th>
+      <th>Motorista</th>
+      <th>Valor terceiro</th>
+      <th>Frota</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reboques.each do |reboque| %>
+      <tr>
+        <td><%= reboque.veiculo %></td>
+        <td><%= reboque.devolucao %></td>
+        <td><%= reboque.data_reboque %></td>
+        <td><%= reboque.endereco_origem %></td>
+        <td><%= reboque.cidade_origem %></td>
+        <td><%= reboque.endereco_destino %></td>
+        <td><%= reboque.cidade_entrega %></td>
+        <td><%= reboque.cliente %></td>
+        <td><%= reboque.valor %></td>
+        <td><%= reboque.motorista %></td>
+        <td><%= reboque.valor_terceiro %></td>
+        <td><%= reboque.frota %></td>
+        <td><%= link_to 'Show', reboque %></td>
+        <td><%= link_to 'Edit', edit_reboque_path(reboque) %></td>
+        <td><%= link_to 'Destroy', reboque, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reboque', new_reboque_path %>

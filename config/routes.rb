@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reboques
   resources :estoques
   resources :frota
   resources :clientes

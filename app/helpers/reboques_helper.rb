@@ -1,0 +1,2 @@
+module ReboquesHelper
+end

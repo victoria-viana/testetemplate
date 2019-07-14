@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  veiculo: one
+  devolucao: false
+  data_reboque: 2019-07-14
+  endereco_origem: MyString
+  cidade_origem: 1
+  endereco_destino: MyString
+  cidade_entrega: 1
+  cliente: one
+  valor: 9.99
+  motorista: 1
+  valor_terceiro: 9.99
+  frota: one
+
+two:
+  veiculo: two
+  devolucao: false
+  data_reboque: 2019-07-14
+  endereco_origem: MyString
+  cidade_origem: 1
+  endereco_destino: MyString
+  cidade_entrega: 1
+  cliente: two
+  valor: 9.99
+  motorista: 1
+  valor_terceiro: 9.99
+  frota: two

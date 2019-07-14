@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Veiculo:</strong>
+  <%= @reboque.veiculo %>
+</p>
+
+<p>
+  <strong>Devolucao:</strong>
+  <%= @reboque.devolucao %>
+</p>
+
+<p>
+  <strong>Data reboque:</strong>
+  <%= @reboque.data_reboque %>
+</p>
+
+<p>
+  <strong>Endereco origem:</strong>
+  <%= @reboque.endereco_origem %>
+</p>
+
+<p>
+  <strong>Cidade origem:</strong>
+  <%= @reboque.cidade_origem %>
+</p>
+
+<p>
+  <strong>Endereco destino:</strong>
+  <%= @reboque.endereco_destino %>
+</p>
+
+<p>
+  <strong>Cidade entrega:</strong>
+  <%= @reboque.cidade_entrega %>
+</p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @reboque.cliente %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @reboque.valor %>
+</p>
+
+<p>
+  <strong>Motorista:</strong>
+  <%= @reboque.motorista %>
+</p>
+
+<p>
+  <strong>Valor terceiro:</strong>
+  <%= @reboque.valor_terceiro %>
+</p>
+
+<p>
+  <strong>Frota:</strong>
+  <%= @reboque.frota %>
+</p>
+
+<%= link_to 'Edit', edit_reboque_path(@reboque) %> |
+<%= link_to 'Back', reboques_path %>

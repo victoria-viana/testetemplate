@@ -1,0 +1,77 @@
+<%= form_with(model: reboque, local: true) do |form| %>
+  <% if reboque.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(reboque.errors.count, "error") %> prohibited this reboque from being saved:</h2>
+
+      <ul>
+      <% reboque.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :veiculo_id %>
+    <%= form.text_field :veiculo_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :devolucao %>
+    <%= form.check_box :devolucao %>
+  </div>
+
+  <div class="field">
+    <%= form.label :data_reboque %>
+    <%= form.date_select :data_reboque %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endereco_origem %>
+    <%= form.text_field :endereco_origem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cidade_origem %>
+    <%= form.number_field :cidade_origem %>
+  </div>
+
+  <div class="field">
+    <%= form.label :endereco_destino %>
+    <%= form.text_field :endereco_destino %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cidade_entrega %>
+    <%= form.number_field :cidade_entrega %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cliente_id %>
+    <%= form.text_field :cliente_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor %>
+    <%= form.text_field :valor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :motorista %>
+    <%= form.number_field :motorista %>
+  </div>
+
+  <div class="field">
+    <%= form.label :valor_terceiro %>
+    <%= form.text_field :valor_terceiro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :frota_id %>
+    <%= form.text_field :frota_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
