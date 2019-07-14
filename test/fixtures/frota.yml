@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  modelo: MyString
+  placa: MyString
+  renavan: MyString
+  tipo_entrada: one
+  interno: false
+
+two:
+  modelo: MyString
+  placa: MyString
+  renavan: MyString
+  tipo_entrada: two
+  interno: false

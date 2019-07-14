@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Frota</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Modelo</th>
+      <th>Placa</th>
+      <th>Renavan</th>
+      <th>Tipo entrada</th>
+      <th>Interno</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @frota.each do |frotum| %>
+      <tr>
+        <td><%= frotum.modelo %></td>
+        <td><%= frotum.placa %></td>
+        <td><%= frotum.renavan %></td>
+        <td><%= frotum.tipo_entrada %></td>
+        <td><%= frotum.interno %></td>
+        <td><%= link_to 'Show', frotum %></td>
+        <td><%= link_to 'Edit', edit_frotum_path(frotum) %></td>
+        <td><%= link_to 'Destroy', frotum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Frotum', new_frotum_path %>

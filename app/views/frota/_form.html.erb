@@ -1,0 +1,42 @@
+<%= form_with(model: frotum, local: true) do |form| %>
+  <% if frotum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(frotum.errors.count, "error") %> prohibited this frotum from being saved:</h2>
+
+      <ul>
+      <% frotum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :modelo %>
+    <%= form.text_field :modelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :placa %>
+    <%= form.text_field :placa %>
+  </div>
+
+  <div class="field">
+    <%= form.label :renavan %>
+    <%= form.text_field :renavan %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo_entrada_id %>
+    <%= form.text_field :tipo_entrada_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :interno %>
+    <%= form.check_box :interno %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

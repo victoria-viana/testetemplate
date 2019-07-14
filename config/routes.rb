@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :frota
   resources :clientes
   resources :veiculos
   resources :colaboradors
