@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Estoque:</strong>
+  <%= @estoque_reboque.estoque %>
+</p>
+
+<p>
+  <strong>Reboque:</strong>
+  <%= @estoque_reboque.reboque %>
+</p>
+
+<%= link_to 'Edit', edit_estoque_reboque_path(@estoque_reboque) %> |
+<%= link_to 'Back', estoque_reboques_path %>
