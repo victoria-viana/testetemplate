@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @colaborador.nome %>
+</p>
+
+<p>
+  <strong>Cpf:</strong>
+  <%= @colaborador.cpf %>
+</p>
+
+<p>
+  <strong>Rg:</strong>
+  <%= @colaborador.rg %>
+</p>
+
+<p>
+  <strong>Celular:</strong>
+  <%= @colaborador.celular %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @colaborador.email %>
+</p>
+
+<p>
+  <strong>Whatsapp:</strong>
+  <%= @colaborador.whatsapp %>
+</p>
+
+<p>
+  <strong>Interno:</strong>
+  <%= @colaborador.interno %>
+</p>
+
+<%= link_to 'Edit', edit_colaborador_path(@colaborador) %> |
+<%= link_to 'Back', colaboradors_path %>

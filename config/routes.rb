@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :colaboradors
   resources :tipo_entradas
   resources :bancos
   resources :cidades
