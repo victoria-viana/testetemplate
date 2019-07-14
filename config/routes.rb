@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :tipo_entradas
   resources :bancos
   resources :cidades
   devise_for :admins
